@@ -89,16 +89,16 @@ const modals = () => {
     }
 
     function openByScroll(selector) {
-        let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
-
         window.addEventListener('scroll', () => {
+            let scrollHeight = Math.max(document.documentElement.scrollHeight, document.body.scrollHeight);
+
             if (!btnPressed && (window.pageYOffset + document.documentElement.clientHeight >= scrollHeight)) {
                 document.querySelector(selector).click();
             }
         });
     }
 
-    bindModal('.button-design', '.popup-design', '.popup-design', '.popup-design .popup-close');
+    bindModal('.button-design', '.popup-design', '.popup-design .popup-close');
     bindModal('.button-consultation', '.popup-consultation', '.popup-consultation .popup-close');
     bindModal('.fixed-gift', '.popup-gift', '.popup-gift .popup-close', true);
     openByScroll('.fixed-gift');
