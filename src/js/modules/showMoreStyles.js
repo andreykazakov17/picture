@@ -16,13 +16,7 @@ const showMoreStyles = (trigger, wrapper) => {
 
         this.remove();
     });
-
-    function showError() {
-        let message = document.createElement('div');
-
-        message.textContent = "Что-то пошло не так...";
-    }
-
+    
     function createCards(response) {
         response.forEach(({src, title, link}) => {
             let card = document.createElement('div');
