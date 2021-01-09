@@ -6,6 +6,7 @@ import mask from './modules/mask';
 import checkTextInputs from './modules/checkTextInputs';
 import calc from './modules/calc';
 import filter from './modules/filter';
+import pictureSize from './modules/pictureSize';
 
 window.addEventListener('DOMContentLoaded', () => {
     modals();
@@ -17,4 +18,5 @@ window.addEventListener('DOMContentLoaded', () => {
     checkTextInputs('[name="name"]');
     calc('#size', '#material', '#options', '.promocode', '.calc-price');
     filter();
+    pictureSize('.sizes-block');
 });
