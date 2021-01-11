@@ -36,7 +36,7 @@ const filter = () => {
             btn.addEventListener('click', () => {
                 typeFilter();
             });
-        }
+        }                                                                 
     };
 
     filterAll('.all','.all', true);

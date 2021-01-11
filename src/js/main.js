@@ -7,8 +7,12 @@ import checkTextInputs from './modules/checkTextInputs';
 import calc from './modules/calc';
 import filter from './modules/filter';
 import pictureSize from './modules/pictureSize';
+import accordion from './modules/accordion';
+import burger from './modules/burger';
 
 window.addEventListener('DOMContentLoaded', () => {
+    "use strict";
+
     modals();
     slider('.feedback-slider-item', 'horizontal', '.main-prev-btn', '.main-next-btn');
     slider('.main-slider-item', 'vertical');
@@ -19,4 +23,6 @@ window.addEventListener('DOMContentLoaded', () => {
     calc('#size', '#material', '#options', '.promocode', '.calc-price');
     filter();
     pictureSize('.sizes-block');
+    accordion('.accordion-heading');
+    burger('.burger-menu', '.burger');
 });

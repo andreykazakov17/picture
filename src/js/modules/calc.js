@@ -12,7 +12,7 @@ const calc = (size, material, options, promocode, result) => {
     function changeParam(event, elem) {
         elem.addEventListener(event, (e) => {
             const target = e.target,
-                select = target.id;
+                  select = target.id;
 
             function calcFunc(state) {
                 console.log(state[select]);
@@ -48,7 +48,7 @@ const calc = (size, material, options, promocode, result) => {
                 .then(res => calcFunc(res))
                 .catch(err => console.log(err));
         });
-    };
+    }
 
     changeParam('change', sizeBlock);
     changeParam('change', materialBlock);
